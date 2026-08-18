@@ -49,7 +49,7 @@ button, input, select, textarea { font: inherit; }
 .skip-link:focus { top: 12px; }
 
 .site-header {
-  min-height: 78px;
+  min-height: 184px;
   padding: 12px clamp(20px, 5vw, 76px);
   display: flex;
   align-items: center;
@@ -65,8 +65,8 @@ button, input, select, textarea { font: inherit; }
 }
 .brand, .footer-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; text-transform: uppercase; }
 .brand-logo {
-  width: clamp(225px, 25vw, 365px);
-  height: 62px;
+  width: clamp(310px, 31vw, 520px);
+  height: clamp(96px, 10vw, 160px);
   overflow: hidden;
   flex: 0 1 auto;
 }
@@ -74,7 +74,7 @@ button, input, select, textarea { font: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 51%;
+  object-position: 50% 50%;
 }
 .brand-mark {
   width: 44px;
@@ -355,8 +355,8 @@ footer > p { grid-column: 1 / -1; margin: 0; padding-top: 24px; color: #75736e; 
 
 @media (max-width: 760px) {
   body { padding-bottom: 61px; }
-  .site-header { min-height: 68px; padding: 10px 18px; }
-  .brand-logo { width: min(67vw, 250px); height: 48px; }
+  .site-header { min-height: 112px; padding: 10px 18px; gap: 12px; }
+  .brand-logo { width: min(72vw, 300px); height: 92px; }
   .nav-toggle { display: block; }
   .site-header nav { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 20px; background: #111113; flex-direction: column; align-items: stretch; border-top: 1px solid rgba(255,255,255,.12); }
   .site-header nav.is-open { display: flex; }
