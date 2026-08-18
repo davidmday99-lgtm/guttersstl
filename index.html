@@ -55,6 +55,7 @@
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
+      <a href="#top">Home</a>
       <a href="#services">Services</a>
       <a href="#difference">Why Eddie</a>
       <a href="#process">Process</a>
@@ -213,13 +214,16 @@
       <div class="contact-copy reveal">
         <p class="eyebrow">Ready when you are</p>
         <h2>Let’s get your gutters flowing right.</h2>
-        <p>Send a few details and your email app will open with a ready-to-send estimate request.</p>
+        <p>Send a few details and your request will go straight to the GuttersSTL inbox.</p>
         <div class="direct-contact">
           <a href="tel:+13149223083"><span>Call or text</span><strong>314-922-3083</strong></a>
           <a href="mailto:GuttersSTL@gmail.com"><span>Email</span><strong>GuttersSTL@gmail.com</strong></a>
         </div>
       </div>
-      <form class="quote-form reveal" id="quote-form">
+      <form class="quote-form reveal" id="quote-form" action="https://formsubmit.co/GuttersSTL@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New GuttersSTL estimate request">
+        <input type="hidden" name="_next" value="https://guttersstl.com/thanks.html">
+        <input type="hidden" name="_template" value="table">
         <div class="field-row">
           <label>Full name<input type="text" name="name" autocomplete="name" required></label>
           <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
@@ -237,8 +241,8 @@
           </select>
         </label>
         <label>Tell us a little more<textarea name="details" rows="4" placeholder="Overflowing corner, new construction, storm damage..."></textarea></label>
-        <button class="button button-primary" type="submit">Create my estimate request</button>
-        <p class="form-note" id="form-note">This opens a pre-filled email to GuttersSTL@gmail.com. No information is stored on this website.</p>
+        <button class="button button-primary" type="submit">Send estimate request</button>
+        <p class="form-note" id="form-note">Your details are delivered to GuttersSTL@gmail.com through our secure form service and are not stored on this website.</p>
       </form>
     </section>
 
